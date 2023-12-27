@@ -6,6 +6,7 @@ import Section2 from "../../Components/Sections/Section2";
 import Section3banner from "../../Components/Sections/Section3banner";
 import Section4Products from "../../Components/Sections/Section4Products";
 import Section5Customers from "../../Components/Sections/Section5Customers";
+import Section6Testimonials from "../../Components/Sections/Section6Testimonials";
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
     <Section3banner/>
     <Section4Products/>
     <Section5Customers/>
+    <Section6Testimonials/>
 
 
     </>
