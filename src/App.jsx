@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import { Routes,Route } from "react-router-dom";
