@@ -4,22 +4,22 @@ import { Link } from 'react-router-dom'
 function Section4Products() {
   return (
     <>
-    <div className=" md:mb-16 md:mt-[7rem]  py-0 px-16 md:h-[32rem] md:mx-auto lg:max-w-none" >
+    <div className=" md:mb-16 mt-[5rem] md:mt-[7rem]  py-0 px-5 xl:px-[6rem] md:h-[32rem] md:mx-auto lg:max-w-none" >
     <div className="flex flex-col md:flex-row gap-x-10">
-            <div className="flex flex-col pt-0 gap-y-10 basis-1/3">
+            <div className="flex flex-col pt-0 gap-y-6 basis-1/3">
               <div className="flex items-baseline">
               <i className="fa-solid fa-square fa-xs text-primary"></i>
-                <div className="text-5xl md:text-sm md:leading-4 font-medium md:font-bold  ml-6 md:mt-10 md:ml-4">
+                <div className=" md:text-sm md:leading-4 font-medium md:font-bold  ml-6 md:mt-10 md:ml-4">
                   PRODUCTS
                 </div>
               </div>
               <div className="">
-                <h3 className="text-8xl md:text-5xl  leading-tight font-semibold">
+                <h3 className=" md:text-5xl text-2xl leading-tight font-semibold">
                   Our HR Tools
                 </h3>
               </div>
               <div className="">
-                <p className="text-6xl leading-snug md:text-base md:leading-6 text-gray-500">
+                <p className=" leading-snug text-[1.1rem] md:text-base md:leading-6 text-gray-500">
                   Our job grading and evaluation tool, combined with the
                   compensation management tool, is a highly effective SaaS-based
                   solution. It greatly assists HR consultants and managers in
@@ -30,14 +30,14 @@ function Section4Products() {
               </div>
             </div>
             <div className="basis-2/3 flex flex-col gap-y-20 md:flex-row gap-x-10">
-              <div className="flex flex-col gap-y-20 md:gap-y-5 bg-[#eff1f5] w-fit mx-10 md:mx-0 p-32 md:p-9 rounded-2xl">
+              <div className="flex flex-col gap-y-5 md:gap-y-5 bg-[#eff1f5] w-fit mx-5 md:mx-0 p-9 md:p-9 rounded-2xl">
                 <div className="flow-root">
-                  <h4 className="font-medium  text-8xl md:text-2xl md:leading-8">
+                  <h4 className="xl:font-medium  text-[2rem] leading-[1] md:text-2xl md:leading-8">
                     Job Grading and Evaluation
                   </h4>
                 </div>
                 <div>
-                  <p className="text-6xl leading-snug md:text-base md:leading-7 text-gray-500">
+                  <p className=" leading-snug md:text-base md:leading-7 text-gray-500">
                     Job evaluation assesses and ranks job roles in an
                     organization based on responsibilities and skills, often for
                     compensation and structuring purposes.
@@ -54,24 +54,24 @@ function Section4Products() {
                 <div className="flex">
                   <div>
                     <Link
-                      className="text-5xl md:text-base font-medium"
+                      className=" md:text-base font-medium"
                     >
                       Free Trial
                     </Link>
                   </div>
                   <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="blue" fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="blue" fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-y-20 md:gap-y-5 bg-[#eff1f5] w-fit mx-10 md:mx-0 p-32 md:p-9 rounded-2xl">
+              <div className="flex flex-col gap-y-5 md:gap-y-5 bg-[#eff1f5] w-fit mx-5 md:mx-0 p-9 md:p-9 rounded-2xl">
                 <div className="flow-root">
-                  <h4 className="font-medium  text-8xl md:text-2xl md:leading-8">
+                <h4 className="xl:font-medium  text-[2rem] leading-[1] md:text-2xl md:leading-8">
                     Compensation Management
                   </h4>
                 </div>
                 <div>
-                  <p className="text-6xl leading-snug md:text-base md:leading-7 text-gray-500">
+                  <p className=" leading-snug  md:text-base md:leading-7 text-gray-500">
                     Compensation management software automates salary planning,
                     budget management, and equity analysis, ensuring fair and
                     competitive pay practices.
@@ -88,13 +88,13 @@ function Section4Products() {
                 <div className="flex">
                   <div>
                     <Link
-                      className="text-5xl md:text-base font-medium"
+                      className=" md:text-base font-medium"
                     >
                       Book For Demo
                     </Link>
                   </div>
                   <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="blue" fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="blue" fillule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg>
                   </div>
                 </div>
               </div>

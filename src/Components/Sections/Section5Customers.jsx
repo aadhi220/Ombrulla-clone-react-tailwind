@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Section5Customers() {
   const imagesSet = [
@@ -22,21 +22,27 @@ function Section5Customers() {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 2000);
 
+    return () => clearInterval(interval);
+  }, [currentIndex]);
   return (
     <>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-[5rem] xl:mt-0">
         <div className="flex justify-center items-baseline mb-8 md:mb-1">
           <i className="fa-solid fa-square fa-xs text-primary"></i>
-          <h4 className="text-center text-5xl md:text-sm font-medium  mb-8 md:mb-[1.125rem] mx-4">
+          <h4 className="text-center  md:text-sm font-medium   md:mb-[1.125rem] mx-4">
             OUR CUSTOMERS
           </h4>
           <i className="fa-solid fa-square fa-xs text-primary"></i>
         </div>
-        <h2 className="text-8xl md:text-5xl font-medium text-center tracking-tight mb-[1.125rem]">
+        <h2 className=" text-2xl md:text-5xl font-medium text-center tracking-tight xl:mb-[1.125rem]">
           They Trust Us
         </h2>
-        <div className="mt-16 flow-root lg:mt-10 mx-6">
+        <div className="mt-2 flow-root lg:mt-10 mx-6">
           <div className="w-[100%] relative overflow-hidden">
             <button
               type="button"
@@ -44,7 +50,7 @@ function Section5Customers() {
               className="absolute h-full top-0 left-0 z-10"
               onClick={prevSlide}
             >
-              <i class="fa-solid fa-chevron-left opacity-20 hover:opacity-95 fa-xl"></i>
+              <i className="fa-solid fa-chevron-left opacity-20 hover:opacity-95 fa-xl"></i>
             </button>
             <ul
               className="slider"
@@ -59,7 +65,8 @@ function Section5Customers() {
                     <img
                       src={image}
                       alt={`Image ${index + 1}`}
-                      style={{ width: 230, padding: 40 }}
+                    
+                      className="w-[100px] xl:w-[230px] p-[20px] xl:p-[40px]"
                     />
                   </div>
                 ))}
@@ -71,7 +78,7 @@ function Section5Customers() {
               className="absolute h-full top-0 right-0 z-10"
               onClick={nextSlide}
             >
-              <i class="fa-solid fa-chevron-right fa-xl opacity-20 hover:opacity-95 "></i>
+              <i className="fa-solid fa-chevron-right fa-xl opacity-20 hover:opacity-95 "></i>
             </button>
           </div>
         </div>

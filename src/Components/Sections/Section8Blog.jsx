@@ -62,18 +62,18 @@ const blogEntries = [
 
 function Section8Blog() {
   return (
-    <div className="my-32 md:my-8">
+    <div className="mt-[5rem] md:my-8">
     <div className="mb-16 pb-20 lg:px-8 lg:pb-0">
       <div className="relative mx-auto max-w-5xl divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div className="text-center">
-          <div className="flex justify-center items-baseline mb-8 md:mb-1">
+          <div className="flex justify-center items-baseline  md:mb-1">
             <i className="fa-solid fa-square fa-xs text-primary"></i>
-            <h4 className="text-center text-5xl md:text-sm font-medium mb-8 md:mb-[1.125rem] mx-4">
+            <h4 className="text-center  text-sm font-medium mb-8 md:mb-[1.125rem] mx-4">
               BLOG UPDATES
             </h4>
             <i className="fa-solid fa-square fa-xs text-primary"></i>
           </div>
-          <h2 className="text-8xl md:text-5xl font-medium text-center tracking-tight mb-[1.125rem]">
+          <h2 className="text-2xl md:text-5xl font-medium text-center tracking-tight mb-[1.125rem]">
             To Read
           </h2>
         </div>
@@ -93,8 +93,8 @@ function Section8Blog() {
                 </span>
               </div>
               <a href={entry.url} className="py-8 md:py-4 block row-span-1">
-                <p className="text-4xl md:text-xl font-semibold text-gray-900">{entry.title}</p>
-                <p className="mt-3 text-2xl md:text-base text-gray-500">{entry.description}</p>
+                <p className="text-1xl md:text-xl font-semibold text-gray-900">{entry.title}</p>
+                <p className="mt-3 text-1xl md:text-base text-gray-500">{entry.description}</p>
               </a>
               <div className="flex row-span-1 place-items-center">
                 <div className="flex-shrink-0">
@@ -102,7 +102,7 @@ function Section8Blog() {
                     <span className="sr-only">{entry.author.name}</span>
                     <img
                       src={entry.author.avatar}
-                      className="md:h-10 md:w-10 h-15 w-20 rounded-full"
+                      className="h-10 w-10 rounded-full"
                       alt={entry.author.name}
                       loading="lazy"
                     />
@@ -114,7 +114,7 @@ function Section8Blog() {
                   </p>
                   <div className="flex space-x-1 text-lg md:text-sm text-gray-500">
                     <time date-time={entry.date}>{entry.date}</time>
-                    <span aria-hidden="true">·</span>
+                    <span >·</span>
                     <span>{entry.readTime}</span>
                   </div>
                 </div>

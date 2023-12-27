@@ -6,6 +6,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:#004eff ;
+  
+}
 
 @tailwind base;
 @tailwind components;

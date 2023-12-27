@@ -40,7 +40,7 @@ function Section7Brands() {
         },
       ]
   return (
-    <div className="bg-white mx-auto max-w-7xl px-6 lg:py-16 lg:px-8">
+    <div className="hidden xl:block bg-white mx-auto max-w-7xl px-6 lg:py-16 lg:px-8">
       <div className="flex justify-center items-center">
         <i className="fa-solid fa-square fa-xs text-primary"></i>
         <h4 className="text-center text-sm font-medium p-2 mx-2">
@@ -48,7 +48,7 @@ function Section7Brands() {
         </h4>
         <i className="fa-solid fa-square fa-xs text-primary"></i>
       </div>
-      <h2 className="text-5xl font-medium text-center tracking-tight mb-10">
+      <h2 className=" font-medium text-center tracking-tight mb-10">
         Trusted by Thousands of Businesses
       </h2>
       <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">

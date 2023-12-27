@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({setIsSidebarOpen, isSidebarOpen}) {
   return (
     <>
-      <header className="fixed top-0 flex w-full items-center justify-between  md:h-16 md:px-24">
+      <header className="absolute top-0 flex w-full items-center justify-between  md:h-16 xl:px-24 px-6 h-16 ">
         <div className="flex">
           <Link to={"/"} className=" flex-shrink-0">
             <img
-              className="h-8 "
+              className="h-8 xl:h-8"
               src="https://www.ombrulla.com/logo.svg"
               alt="logo"
               loading="lazy"
@@ -16,7 +16,7 @@ function Header() {
           </Link>
         </div>
 
-        <nav className=" flex items-center">
+        <nav className="  items-center hidden xl:flex">
           <div className=" flex justify-center items-center me-8 ">
             <Link to={"/"} className="hover:text-primary text-primary font-bold">
               Home
@@ -68,6 +68,8 @@ function Header() {
           </div>
        
         </nav>
+
+       <button onClick={()=>{setIsSidebarOpen(!isSidebarOpen)}}> <i className="fa-solid fa-bars block fa-xl xl:hidden"></i></button>
       </header>
     </>
   );

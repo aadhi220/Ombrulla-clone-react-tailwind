@@ -13,15 +13,15 @@ function Home() {
   return (
     <>
       <Hero />
-
-    <Section1/>
-    <Section2/>
-    <Section3banner/>
-    <Section4Products/>
-    <Section5Customers/>
-    <Section6Testimonials/>
-    <Section7Brands/>
-    <Section8Blog/>
+      <Section1/>
+      <Section2/>
+      <Section3banner/>
+      <Section4Products/>
+      <Section5Customers/>
+      <Section6Testimonials/>
+      <Section7Brands/>
+      <Section8Blog/>
+  
 
     
 
