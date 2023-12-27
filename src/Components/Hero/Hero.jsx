@@ -1,5 +1,5 @@
 import React from "react";
-
+import heroImg from '../../assets/hero.png'
 function Hero() {
   return (
     <>
@@ -34,7 +34,7 @@ function Hero() {
         <div className=" xl:pt-[7rem] xl:ps-[2rem]">
           <img
             className="w-[90%] object-center"
-            src="../../../public/hero.png"
+            src={heroImg}
             alt=""
             loading="lazy"
           />
