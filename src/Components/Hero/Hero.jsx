@@ -34,7 +34,7 @@ function Hero() {
         <div className=" xl:pt-[7rem] xl:ps-[2rem]">
           <img
             className="w-[90%] object-center"
-            src="src/assets/hero.png"
+            src="../../../public/hero.png"
             alt=""
             loading="lazy"
           />
